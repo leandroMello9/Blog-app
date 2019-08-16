@@ -1,0 +1,31 @@
+<h1>
+    Lista de Postagem
+</h1>
+
+{{#each posts}}
+    <form>
+        <div class="card">
+            <div class="card-body">
+
+            <label for="Titulo">Titulo : {{titulo}}</label>
+            <hr>
+            <label for="slug">Slug : {{slug}}</label>
+            <hr>
+            <label for="descricao">Descrição :{{descricao}}</label>
+            <hr>
+            <label for="conteudo">Conteudo : {{conteudo}}</label>
+            <hr>
+            <label for="categoria">Categoria : {{categoria}}</label>
+            <hr>
+            <label for="data">Data : {{data}}</label>
+            <br>
+            
+            </div>
+
+        </div>
+    </form>
+        <a href="/admin/postagens/add">
+                <button class="btn btn-success mt-4">Voltar para cadastrar uma postagem</button>
+
+            </a>
+{{/each}}
